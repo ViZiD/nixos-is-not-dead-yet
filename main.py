@@ -49,7 +49,7 @@ async def loop():
     async with aiohttp.ClientSession(base_url=API_URL) as session:
         while isinstance("", str):
             try:
-                run_each_day = datetime.datetime.now() + datetime.timedelta(minutes=3)
+                run_each_day = datetime.datetime.now() + datetime.timedelta(days=1)
                 run_at_date = datetime.datetime.now() if first_run else run_each_day
                 response = await run_at(
                     run_at_date,
