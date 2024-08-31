@@ -1,5 +1,8 @@
 #!/usr/bin/env nix-shell
 #!nix-shell -i python3 -p "python3.withPackages (ps: with ps; [ aiohttp ])" -p pyright ruff
+# Copyright (C) 2024 Radik Islamov <vizid1337@gmail.com>
+# SPDX-License-Identifier: MIT
+
 import asyncio
 import datetime
 import logging
